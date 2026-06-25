@@ -126,7 +126,7 @@ export default function HomePage() {
                 <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5 duration-300" />
               </Link>
               <a 
-                href="/Abhiram_RS_Resume.pdf" 
+                href="/Abhiram_R_S_RESUME.pdf" 
                 download
                 className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:border-indigo-500/40 hover:bg-indigo-500/5 hover:scale-[1.03] active:scale-[0.98]"
               >

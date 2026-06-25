@@ -47,7 +47,7 @@ export default function ResumePage() {
         </div>
 
         <a 
-          href="/Abhiram_RS_Resume.pdf" 
+          href="/Abhiram_R_S_RESUME.pdf" 
           download
           className="group relative flex shrink-0 items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_0_30px_-5px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_-5px_rgba(99,102,241,0.55)] hover:brightness-110 active:scale-[0.98]"
         >
