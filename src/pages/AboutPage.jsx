@@ -34,7 +34,7 @@ export default function AboutPage() {
         
         {/* Bio Card (2 columns wide) */}
         <div className="md:col-span-2">
-          <SpotlightCard className="h-full p-8 flex flex-col justify-between border border-white/5 bg-slate-900/30">
+          <SpotlightCard className="h-full p-6 sm:p-8 flex flex-col justify-between border border-white/5 bg-slate-900/30">
             <div className="space-y-6">
               <h3 className="font-display text-2xl font-bold tracking-tight text-white">My Engineering Approach</h3>
               <p className="text-sm leading-relaxed text-zinc-400">
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
         {/* Core Strengths Card (1 column wide) */}
         <div>
-          <SpotlightCard className="h-full p-8 border border-white/5 bg-slate-900/30">
+          <SpotlightCard className="h-full p-6 sm:p-8 border border-white/5 bg-slate-900/30">
             <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-6">Core Strengths</h3>
             
             <ul className="space-y-5">
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Bento Grid row */}
-      <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="grid gap-6 grid-cols-2 lg:grid-cols-4">
         {bentoStats.map((stat, idx) => {
           const Icon = stat.icon;
           return (
@@ -96,7 +96,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="rounded-3xl border border-white/5 bg-slate-900/10 p-6 flex items-center justify-between backdrop-blur-sm"
+              className="rounded-3xl border border-white/5 bg-slate-900/10 p-4 sm:p-6 flex items-center justify-between backdrop-blur-sm"
             >
               <div>
                 <p className="text-xs font-mono uppercase tracking-wider text-zinc-500">{stat.label}</p>

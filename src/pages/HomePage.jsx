@@ -142,7 +142,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <SpotlightCard className="p-8 border border-white/5 bg-slate-950/70 shadow-2xl relative overflow-hidden">
+            <SpotlightCard className="p-6 sm:p-8 border border-white/5 bg-slate-950/70 shadow-2xl relative overflow-hidden">
               <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-indigo-500/5 blur-3xl" />
               
               <div className="flex items-center justify-between border-b border-white/5 pb-4">
@@ -218,7 +218,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/20 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-white/10 hover:bg-slate-900/30"
+              className="group relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/20 p-6 sm:p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-white/10 hover:bg-slate-900/30"
             >
               <div className={`absolute inset-0 bg-gradient-to-br -z-10 transition-opacity ${color}`} />
               <div className="mb-6 inline-flex rounded-2xl bg-white/5 p-4 text-white border border-white/10 group-hover:scale-105 group-hover:border-indigo-500/20 group-hover:text-indigo-400 transition-all duration-300">
@@ -257,7 +257,7 @@ export default function HomePage() {
       </section>
 
       {/* Interactive Tech Stack */}
-      <section className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-slate-950/40 p-8 md:p-14 backdrop-blur-md">
+      <section className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-slate-950/40 p-6 sm:p-8 md:p-14 backdrop-blur-md">
         <div className="absolute right-0 top-0 -z-10 h-72 w-72 rounded-full bg-indigo-500/5 blur-[100px]" />
         
         <SectionTitle 
