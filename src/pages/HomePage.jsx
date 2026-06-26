@@ -83,7 +83,7 @@ export default function HomePage() {
         />
         <div className="absolute right-10 top-10 -z-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-[130px] pointer-events-none" />
 
-        <div className="grid gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-center w-full relative z-10">
+        <div className="grid gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-start w-full relative z-10">
           
           {/* Main Hero Typography and Action items */}
           <motion.div 
@@ -173,7 +173,7 @@ export default function HomePage() {
               </div>
 
               {/* Role Summary Display */}
-              <div className="mt-8 min-h-[90px]">
+              <div className="mt-8 min-h-[110px]">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={selectedRoleId}
