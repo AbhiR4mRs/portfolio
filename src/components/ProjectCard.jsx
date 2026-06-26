@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index = 0 }) {
           </div>
 
           {/* Title */}
-          <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors duration-300">
+          <h3 className="mt-4 font-display text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors duration-300">
             {project.title}
           </h3>
 

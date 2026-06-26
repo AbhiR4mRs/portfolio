@@ -8,27 +8,29 @@ export default function SkillTabs() {
   return (
     <div className="w-full space-y-8">
       {/* Tab Navigation */}
-      <div className="flex flex-wrap gap-2 border-b border-white/5 pb-4">
-        {skillsCategorized.map((categoryObj, idx) => (
-          <button
-            key={categoryObj.category}
-            onClick={() => setActiveTab(idx)}
-            className={`relative rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 ${
-              activeTab === idx
-                ? 'text-white font-semibold'
-                : 'text-zinc-400 hover:text-zinc-200'
-            }`}
-          >
-            {activeTab === idx && (
-              <motion.div
-                layoutId="activeSkillTab"
-                className="absolute inset-0 -z-10 rounded-full bg-indigo-500/10 border border-indigo-500/20"
-                transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-              />
-            )}
-            {categoryObj.category}
-          </button>
-        ))}
+      <div className="flex overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 gap-2 border-b border-white/5 pb-4 scroll-smooth">
+        <div className="flex gap-2">
+          {skillsCategorized.map((categoryObj, idx) => (
+            <button
+              key={categoryObj.category}
+              onClick={() => setActiveTab(idx)}
+              className={`relative rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[10px] sm:text-xs font-medium transition-all duration-300 shrink-0 ${
+                activeTab === idx
+                  ? 'text-white font-semibold'
+                  : 'text-zinc-400 hover:text-zinc-200'
+              }`}
+            >
+              {activeTab === idx && (
+                <motion.div
+                  layoutId="activeSkillTab"
+                  className="absolute inset-0 -z-10 rounded-full bg-indigo-500/10 border border-indigo-500/20"
+                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                />
+              )}
+              {categoryObj.category}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Grid of Skills for Selected Tab */}

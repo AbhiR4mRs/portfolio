@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.4 }}
-      className="space-y-16"
+      className="space-y-10 sm:space-y-16"
     >
       {/* Page Header */}
       <div>
@@ -46,27 +46,29 @@ export default function ProjectsPage() {
       </div>
 
       {/* Category Pills Selector */}
-      <div className="flex flex-wrap gap-2.5 border-b border-white/5 pb-5">
-        {categories.map((cat) => (
-          <button
-            key={cat.id}
-            onClick={() => setActiveCategory(cat.id)}
-            className={`relative rounded-full px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
-              activeCategory === cat.id
-                ? 'text-white'
-                : 'text-zinc-400 hover:text-zinc-200'
-            }`}
-          >
-            {activeCategory === cat.id && (
-              <motion.div
-                layoutId="activeProjectCategoryTab"
-                className="absolute inset-0 -z-10 rounded-full bg-indigo-500/10 border border-indigo-500/20"
-                transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-              />
-            )}
-            {cat.label}
-          </button>
-        ))}
+      <div className="flex overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 gap-2 border-b border-white/5 pb-4 scroll-smooth">
+        <div className="flex gap-2">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`relative rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-[10px] sm:text-xs font-semibold uppercase tracking-wider transition-all duration-300 shrink-0 ${
+                activeCategory === cat.id
+                  ? 'text-white'
+                  : 'text-zinc-400 hover:text-zinc-200'
+              }`}
+            >
+              {activeCategory === cat.id && (
+                <motion.div
+                  layoutId="activeProjectCategoryTab"
+                  className="absolute inset-0 -z-10 rounded-full bg-indigo-500/10 border border-indigo-500/20"
+                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                />
+              )}
+              {cat.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Projects Grid with AnimatePresence */}
