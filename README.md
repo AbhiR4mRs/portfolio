@@ -1,4 +1,4 @@
-# Premium AI/ML & Full-Stack Developer Portfolio
+# AI/ML & Full-Stack Developer Portfolio
 
 Welcome to my personal portfolio codebase. This is a responsive, highly polished single-page application (SPA) built using React, Vite, Tailwind CSS, and Framer Motion. It acts as a showcase of my technical case studies, core competencies, credentials, and academic background.
 
