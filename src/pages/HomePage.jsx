@@ -249,7 +249,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2">
           {projects.slice(0, 2).map((project, index) => (
             <ProjectCard key={project.slug} project={project} index={index} />
           ))}

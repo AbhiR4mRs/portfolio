@@ -72,7 +72,7 @@ export default function ProjectsPage() {
       {/* Projects Grid with AnimatePresence */}
       <motion.div 
         layout
-        className="grid gap-6 md:grid-cols-2"
+        className="grid gap-6 lg:grid-cols-2"
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, index) => (
