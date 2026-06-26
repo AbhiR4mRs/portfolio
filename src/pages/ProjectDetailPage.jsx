@@ -134,7 +134,7 @@ export default function ProjectDetailPage() {
           {project.metrics && (
             <section className="grid gap-4 sm:grid-cols-3">
               {project.metrics.map((metric) => (
-                <div key={metric.label} className="rounded-2xl border border-white/5 bg-slate-900/10 p-5 backdrop-blur-sm">
+                <div key={metric.label} className="rounded-2xl border border-white/5 bg-slate-900/10 p-4 sm:p-5 backdrop-blur-sm">
                   <p className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">{metric.label}</p>
                   <p className="mt-2 text-xl font-bold text-white font-display">{metric.value}</p>
                 </div>
@@ -160,7 +160,7 @@ export default function ProjectDetailPage() {
               System Architecture Flow
             </h2>
             
-            <div className="rounded-3xl border border-white/5 bg-slate-950/40 p-6 md:p-8">
+            <div className="rounded-3xl border border-white/5 bg-slate-950/40 p-4 sm:p-6 md:p-8">
               <div className="flex flex-col lg:flex-row items-center justify-between gap-4 w-full">
                 {slug === 'zero-day-intrusion-detection-system' ? (
                   <>
@@ -313,7 +313,7 @@ export default function ProjectDetailPage() {
               {project.approach.map((step, idx) => (
                 <li 
                   key={step}
-                  className="flex items-start gap-4 rounded-2xl border border-white/5 bg-slate-900/10 p-5"
+                  className="flex items-start gap-4 rounded-2xl border border-white/5 bg-slate-900/10 p-4 sm:p-5"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-indigo-500/10 text-xs font-bold text-indigo-400 border border-indigo-500/20">
                     {idx + 1}
@@ -365,10 +365,10 @@ export default function ProjectDetailPage() {
         </div>
 
         {/* Sidebar Info Panel (Right, Sticky) */}
-        <aside className="space-y-6 lg:sticky lg:top-28">
+        <aside className="space-y-6 lg:sticky lg:top-28 w-full">
           
           {/* Metadata Card */}
-          <SpotlightCard className="p-6 border border-white/5 bg-slate-900/20">
+          <SpotlightCard className="p-4 sm:p-6 border border-white/5 bg-slate-900/20">
             <h3 className="font-display text-base font-bold text-white mb-4 pb-2 border-b border-white/5">
               Project Details
             </h3>

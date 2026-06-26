@@ -33,7 +33,7 @@ export default function ResumePage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.4 }}
-      className="space-y-16"
+      className="space-y-12 sm:space-y-16"
     >
       
       {/* Page Header */}
@@ -49,7 +49,7 @@ export default function ResumePage() {
         <a 
           href="/Abhiram_R_S_RESUME.pdf" 
           download
-          className="group relative flex shrink-0 items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_0_30px_-5px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_-5px_rgba(99,102,241,0.55)] hover:brightness-110 active:scale-[0.98]"
+          className="group relative flex items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_0_30px_-5px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_-5px_rgba(99,102,241,0.55)] hover:brightness-110 active:scale-[0.98] w-full sm:w-auto"
         >
           <Download size={14} className="transition-transform group-hover:-translate-y-0.5 duration-300" />
           Download Resume (PDF)
@@ -68,7 +68,7 @@ export default function ResumePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
               Professional Summary
             </h2>
-            <SpotlightCard className="p-7 border border-white/5 bg-slate-900/10">
+            <SpotlightCard className="p-5 sm:p-7 border border-white/5 bg-slate-900/10">
               <p className="text-sm leading-relaxed text-zinc-300">
                 {profile.summary}
               </p>
@@ -83,7 +83,7 @@ export default function ResumePage() {
             </h2>
             <div className="space-y-4">
               {timeline.map((edu, idx) => (
-                <div key={edu.title} className="relative rounded-2xl border border-white/5 bg-slate-900/10 p-6">
+                <div key={edu.title} className="relative rounded-2xl border border-white/5 bg-slate-900/10 p-4 sm:p-6">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                     <div>
                       <h3 className="font-display text-base font-bold text-white">{edu.title}</h3>
@@ -109,7 +109,7 @@ export default function ResumePage() {
             </h2>
             
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
+              <div className="p-4 sm:p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
                 <div className="h-8 w-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center border border-indigo-500/20 text-xs font-bold font-mono">01</div>
                 <h3 className="font-display text-sm font-semibold text-white">Advanced ML Implementations</h3>
                 <p className="text-xs text-zinc-500 leading-relaxed">
@@ -117,7 +117,7 @@ export default function ResumePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
+              <div className="p-4 sm:p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
                 <div className="h-8 w-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center border border-cyan-500/20 text-xs font-bold font-mono">02</div>
                 <h3 className="font-display text-sm font-semibold text-white">Full-Stack Application Delivery</h3>
                 <p className="text-xs text-zinc-500 leading-relaxed">
@@ -125,7 +125,7 @@ export default function ResumePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
+              <div className="p-4 sm:p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
                 <div className="h-8 w-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20 text-xs font-bold font-mono">03</div>
                 <h3 className="font-display text-sm font-semibold text-white">Rigorous Quality Assurance</h3>
                 <p className="text-xs text-zinc-500 leading-relaxed">
@@ -133,7 +133,7 @@ export default function ResumePage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
+              <div className="p-4 sm:p-6 rounded-2xl border border-white/5 bg-slate-900/10 space-y-3">
                 <div className="h-8 w-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center border border-amber-500/20 text-xs font-bold font-mono">04</div>
                 <h3 className="font-display text-sm font-semibold text-white">Container Infrastructure</h3>
                 <p className="text-xs text-zinc-500 leading-relaxed">
@@ -154,7 +154,7 @@ export default function ResumePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
               Core Competencies
             </h2>
-            <div className="space-y-6 rounded-3xl border border-white/5 bg-slate-900/20 p-6 backdrop-blur-sm">
+            <div className="space-y-6 rounded-3xl border border-white/5 bg-slate-900/20 p-5 sm:p-6 backdrop-blur-sm">
               {skillsCategorized.map((catObj) => (
                 <div key={catObj.category} className="space-y-2">
                   <h3 className="font-mono text-[10px] font-bold uppercase tracking-wider text-zinc-500">
@@ -189,7 +189,7 @@ export default function ResumePage() {
                   {/* Summary Bar */}
                   <button
                     onClick={() => setSelectedCert(selectedCert === idx ? null : idx)}
-                    className="flex w-full items-center justify-between p-5 text-left transition-all hover:bg-white/5"
+                    className="flex w-full items-center justify-between p-3.5 sm:p-5 text-left transition-all hover:bg-white/5"
                   >
                     <div>
                       <h3 className="font-display text-xs font-bold uppercase tracking-wider text-white">
@@ -210,7 +210,7 @@ export default function ResumePage() {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="border-t border-white/5 bg-slate-950/60 p-5 space-y-4"
+                        className="border-t border-white/5 bg-slate-950/60 p-3.5 sm:p-5 space-y-4"
                       >
                         <div className="flex items-center justify-between text-[10px] font-mono">
                           <span className="text-zinc-500">ID: {cert.credentialId}</span>

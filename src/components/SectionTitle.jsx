@@ -13,7 +13,7 @@ export default function SectionTitle({ eyebrow, title, text, className = '' }) {
         <span className="h-1 w-6 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500" />
         <p className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-indigo-400">{eyebrow}</p>
       </div>
-      <h2 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl leading-tight">
+      <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
         {title}
       </h2>
       {text && (

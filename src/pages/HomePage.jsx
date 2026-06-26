@@ -60,7 +60,7 @@ export default function HomePage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.4 }}
-      className="space-y-36"
+      className="space-y-20 sm:space-y-28 lg:space-y-36"
     >
       {/* Hero Section */}
       <section 
@@ -83,7 +83,7 @@ export default function HomePage() {
         />
         <div className="absolute right-10 top-10 -z-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-[130px] pointer-events-none" />
 
-        <div className="grid gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-start w-full relative z-10">
+        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-start w-full relative z-10">
           
           {/* Main Hero Typography and Action items */}
           <motion.div 
@@ -104,11 +104,11 @@ export default function HomePage() {
             </div>
 
             {/* Title */}
-            <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6.5xl">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6.5xl font-extrabold leading-[1.1] tracking-tight text-white">
               Hi, I'm <span className="text-shimmer-gradient font-black">{profile.name}</span>.
             </h1>
             
-            <p className="font-display text-2xl font-semibold leading-relaxed text-zinc-300">
+            <p className="font-display text-lg sm:text-xl md:text-2xl font-semibold leading-relaxed text-zinc-300">
               Computer Science Graduate specializing in AI & Machine Learning.
             </p>
 
@@ -117,10 +117,10 @@ export default function HomePage() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 pt-4 w-full">
               <Link 
                 to="/projects" 
-                className="group relative flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_0_30px_-5px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_-5px_rgba(99,102,241,0.55)] hover:brightness-110 active:scale-[0.98]"
+                className="group relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 to-violet-600 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_0_30px_-5px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_35px_-5px_rgba(99,102,241,0.55)] hover:brightness-110 active:scale-[0.98] w-full sm:w-auto text-center"
               >
                 View Case Studies 
                 <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5 duration-300" />
@@ -128,7 +128,7 @@ export default function HomePage() {
               <a 
                 href="/Abhiram_R_S_RESUME.pdf" 
                 download
-                className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:border-indigo-500/40 hover:bg-indigo-500/5 hover:scale-[1.03] active:scale-[0.98]"
+                className="group flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md transition-all duration-300 hover:border-indigo-500/40 hover:bg-indigo-500/5 hover:scale-[1.03] active:scale-[0.98] w-full sm:w-auto text-center"
               >
                 <Download size={14} className="transition-transform group-hover:-translate-y-0.5 duration-300" />
                 Download Resume
@@ -141,8 +141,9 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full"
           >
-            <SpotlightCard className="p-6 sm:p-8 border border-white/5 bg-slate-950/70 shadow-2xl relative overflow-hidden">
+            <SpotlightCard className="p-4 sm:p-6 md:p-8 border border-white/5 bg-slate-950/70 shadow-2xl relative overflow-hidden">
               <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-indigo-500/5 blur-3xl" />
               
               <div className="flex items-center justify-between border-b border-white/5 pb-4">
@@ -158,7 +159,7 @@ export default function HomePage() {
                   <button
                     key={role.id}
                     onClick={() => setSelectedRoleId(role.id)}
-                    className={`flex items-center justify-between rounded-xl px-4 py-3 text-left transition-all border ${
+                    className={`flex items-center justify-between rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-left transition-all border ${
                       selectedRoleId === role.id 
                         ? 'bg-indigo-500/10 border-indigo-500/30 text-white font-semibold shadow-inner'
                         : 'bg-transparent border-transparent text-zinc-400 hover:bg-white/5 hover:text-zinc-200'
@@ -218,7 +219,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/20 p-6 sm:p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-white/10 hover:bg-slate-900/30"
+              className="group relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/20 p-5 sm:p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-white/10 hover:bg-slate-900/30"
             >
               <div className={`absolute inset-0 bg-gradient-to-br -z-10 transition-opacity ${color}`} />
               <div className="mb-6 inline-flex rounded-2xl bg-white/5 p-4 text-white border border-white/10 group-hover:scale-105 group-hover:border-indigo-500/20 group-hover:text-indigo-400 transition-all duration-300">
@@ -257,7 +258,7 @@ export default function HomePage() {
       </section>
 
       {/* Interactive Tech Stack */}
-      <section className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-slate-950/40 p-6 sm:p-8 md:p-14 backdrop-blur-md">
+      <section className="relative overflow-hidden rounded-[2.5rem] border border-white/5 bg-slate-950/40 p-4 sm:p-8 md:p-14 backdrop-blur-md">
         <div className="absolute right-0 top-0 -z-10 h-72 w-72 rounded-full bg-indigo-500/5 blur-[100px]" />
         
         <SectionTitle 

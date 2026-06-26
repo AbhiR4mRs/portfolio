@@ -17,7 +17,11 @@ export default function SpotlightCard({ children, className = '', ...props }) {
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/40 p-6 backdrop-blur-md transition-all duration-300 ${className}`}
+      className={`relative overflow-hidden rounded-3xl border border-white/5 bg-slate-900/40 backdrop-blur-md transition-all duration-300 ${
+        className.split(' ').some(c => c.startsWith('p-') || c.startsWith('px-') || c.startsWith('py-'))
+          ? ''
+          : 'p-6'
+      } ${className}`}
       style={{
         '--mouse-x': `${coords.x}px`,
         '--mouse-y': `${coords.y}px`

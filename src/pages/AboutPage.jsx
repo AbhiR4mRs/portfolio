@@ -18,7 +18,7 @@ export default function AboutPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.4 }}
-      className="space-y-24"
+      className="space-y-16 sm:space-y-24"
     >
       {/* Intro Header */}
       <div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
         
         {/* Bio Card (2 columns wide) */}
         <div className="md:col-span-2">
-          <SpotlightCard className="h-full p-6 sm:p-8 flex flex-col justify-between border border-white/5 bg-slate-900/30">
+          <SpotlightCard className="h-full p-5 sm:p-8 flex flex-col justify-between border border-white/5 bg-slate-900/30">
             <div className="space-y-6">
               <h3 className="font-display text-2xl font-bold tracking-tight text-white">My Engineering Approach</h3>
               <p className="text-sm leading-relaxed text-zinc-400">
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
         {/* Core Strengths Card (1 column wide) */}
         <div>
-          <SpotlightCard className="h-full p-6 sm:p-8 border border-white/5 bg-slate-900/30">
+          <SpotlightCard className="h-full p-5 sm:p-8 border border-white/5 bg-slate-900/30">
             <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-6">Core Strengths</h3>
             
             <ul className="space-y-5">
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Bento Grid row */}
-      <section className="grid gap-6 grid-cols-2 lg:grid-cols-4">
+      <section className="grid gap-4 sm:gap-6 grid-cols-2 lg:grid-cols-4">
         {bentoStats.map((stat, idx) => {
           const Icon = stat.icon;
           return (
@@ -96,11 +96,11 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="rounded-3xl border border-white/5 bg-slate-900/10 p-4 sm:p-6 flex items-center justify-between backdrop-blur-sm"
+              className="rounded-3xl border border-white/5 bg-slate-900/10 p-3 sm:p-6 flex items-center justify-between backdrop-blur-sm"
             >
               <div>
-                <p className="text-xs font-mono uppercase tracking-wider text-zinc-500">{stat.label}</p>
-                <p className="mt-2 text-2xl font-bold text-white font-display">{stat.value}</p>
+                <p className="text-[10px] sm:text-xs font-mono uppercase tracking-wider text-zinc-500">{stat.label}</p>
+                <p className="mt-2 text-lg sm:text-2xl font-bold text-white font-display">{stat.value}</p>
               </div>
               <div className="rounded-xl bg-white/5 p-3 text-zinc-400 border border-white/5">
                 <Icon size={20} />
@@ -121,7 +121,7 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className="lg:col-span-2 space-y-8 relative before:absolute before:left-4 before:top-2 before:bottom-2 before:w-[1px] before:bg-zinc-800">
+        <div className="lg:col-span-2 space-y-8 relative before:absolute before:left-3 sm:before:left-4 before:top-2 before:bottom-2 before:w-[1px] before:bg-zinc-800">
           {timeline.map((item, idx) => (
             <motion.div 
               key={item.title}
@@ -129,14 +129,14 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="relative pl-12 group"
+              className="relative pl-8 sm:pl-12 group"
             >
               {/* Timeline marker */}
-              <div className="absolute left-1.5 top-1.5 h-5 w-5 rounded-full border-2 border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-indigo-400 transition-colors duration-300">
+              <div className="absolute left-0.5 sm:left-1.5 top-1.5 h-5 w-5 rounded-full border-2 border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-indigo-400 transition-colors duration-300">
                 <span className="h-1.5 w-1.5 rounded-full bg-zinc-800 group-hover:bg-indigo-400 transition-colors duration-300" />
               </div>
 
-              <SpotlightCard className="p-6 border border-white/5 bg-slate-900/10">
+              <SpotlightCard className="p-5 sm:p-6 border border-white/5 bg-slate-900/10">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                   <h3 className="font-display text-lg font-bold text-white group-hover:text-indigo-300 transition-colors duration-300">
                     {item.title}

@@ -12,7 +12,7 @@ export default function ProjectCard({ project, index = 0 }) {
       transition={{ duration: 0.5, delay: index * 0.06 }}
       className="h-full"
     >
-      <SpotlightCard className="group flex h-full flex-col justify-between p-7 border border-white/5 bg-slate-900/30">
+      <SpotlightCard className="group flex h-full flex-col justify-between p-5 sm:p-7 border border-white/5 bg-slate-900/30">
         <div>
           {/* Category */}
           <div className="flex items-center justify-between gap-4">
@@ -52,7 +52,7 @@ export default function ProjectCard({ project, index = 0 }) {
 
           <Link 
             to={`/projects/${project.slug}`} 
-            className="inline-flex items-center gap-2 rounded-full border border-white/5 bg-white/5 px-5 py-2.5 text-[10px] font-bold uppercase tracking-wider text-white hover:border-indigo-500/30 hover:bg-indigo-500/10 hover:text-indigo-300 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+            className="flex sm:inline-flex items-center justify-center gap-2 rounded-full border border-white/5 bg-white/5 px-5 py-2.5 text-[10px] font-bold uppercase tracking-wider text-white hover:border-indigo-500/30 hover:bg-indigo-500/10 hover:text-indigo-300 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto text-center"
           >
             View Case Study 
             <ArrowUpRight size={13} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />

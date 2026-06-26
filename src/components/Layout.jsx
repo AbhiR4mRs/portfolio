@@ -153,13 +153,13 @@ export default function Layout() {
       </header>
 
       {/* Main Content Layout */}
-      <main className="mx-auto max-w-6xl px-6 pb-24 pt-32 md:pt-40">
+      <main className="mx-auto max-w-6xl px-4 sm:px-6 pb-24 pt-28 sm:pt-32 md:pt-40">
         <Outlet />
       </main>
 
       {/* Footer */}
       <footer className="border-t border-white/5 bg-slate-950/20 py-10 text-center text-sm text-zinc-500 backdrop-blur-sm">
-        <div className="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} Abhiram R S. All rights reserved.</p>
         </div>
       </footer>
