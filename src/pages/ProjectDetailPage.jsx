@@ -95,7 +95,7 @@ export default function ProjectDetailPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.4 }}
-      className="space-y-16"
+      className="space-y-10 sm:space-y-16"
     >
       
       {/* Navigation Header */}
@@ -125,18 +125,18 @@ export default function ProjectDetailPage() {
       </div>
 
       {/* Main Grid Layout: Content (Left) & Sidebar (Right) */}
-      <div className="grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-start">
+      <div className="grid gap-6 lg:gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-start">
         
         {/* Case Study Core Content (Left) */}
-        <div className="space-y-12">
+        <div className="space-y-10 sm:space-y-12">
           
           {/* Key Metrics Panels */}
           {project.metrics && (
-            <section className="grid gap-4 sm:grid-cols-3">
+            <section className="grid grid-cols-3 gap-2.5 sm:gap-4">
               {project.metrics.map((metric) => (
-                <div key={metric.label} className="rounded-2xl border border-white/5 bg-slate-900/10 p-4 sm:p-5 backdrop-blur-sm">
-                  <p className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">{metric.label}</p>
-                  <p className="mt-2 text-xl font-bold text-white font-display">{metric.value}</p>
+                <div key={metric.label} className="rounded-2xl border border-white/5 bg-slate-900/10 p-3 sm:p-5 backdrop-blur-sm">
+                  <p className="text-[9px] sm:text-[10px] font-mono uppercase tracking-wider text-zinc-500">{metric.label}</p>
+                  <p className="mt-1 sm:mt-2 text-sm sm:text-xl font-bold text-white font-display">{metric.value}</p>
                 </div>
               ))}
             </section>
@@ -144,7 +144,7 @@ export default function ProjectDetailPage() {
 
           {/* Problem Statement */}
           <section className="space-y-4">
-            <h2 className="font-display text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+            <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
               <span className="h-1.5 w-1.5 rounded-full bg-red-400" />
               The Problem
             </h2>
@@ -155,7 +155,7 @@ export default function ProjectDetailPage() {
 
           {/* Pipeline Systems Diagram (Visual representation) */}
           <section className="space-y-4">
-            <h2 className="font-display text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+            <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
               System Architecture Flow
             </h2>
@@ -305,7 +305,7 @@ export default function ProjectDetailPage() {
 
           {/* Approach & Steps */}
           <section className="space-y-6">
-            <h2 className="font-display text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+            <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-400" />
               Approach & Implementation
             </h2>
@@ -313,7 +313,7 @@ export default function ProjectDetailPage() {
               {project.approach.map((step, idx) => (
                 <li 
                   key={step}
-                  className="flex items-start gap-4 rounded-2xl border border-white/5 bg-slate-900/10 p-4 sm:p-5"
+                  className="flex items-start gap-3 sm:gap-4 rounded-2xl border border-white/5 bg-slate-900/10 p-3.5 sm:p-5"
                 >
                   <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-indigo-500/10 text-xs font-bold text-indigo-400 border border-indigo-500/20">
                     {idx + 1}
@@ -327,7 +327,7 @@ export default function ProjectDetailPage() {
           {/* Code Snippet Window */}
           {projectCodeSnippets[slug] && (
             <section className="space-y-4">
-              <h2 className="font-display text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+              <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
                 Pipeline Implementation Code
               </h2>
@@ -344,7 +344,7 @@ export default function ProjectDetailPage() {
                 </div>
                 
                 {/* Code Window Pre */}
-                <pre className="overflow-x-auto p-5 font-mono text-xs text-zinc-300 leading-relaxed max-h-[350px]">
+                <pre className="overflow-x-auto p-3.5 sm:p-5 font-mono text-xs text-zinc-300 leading-relaxed max-h-[350px]">
                   <code>{projectCodeSnippets[slug]}</code>
                 </pre>
               </div>
@@ -353,7 +353,7 @@ export default function ProjectDetailPage() {
 
           {/* Outcome & Impact */}
           <section className="space-y-4">
-            <h2 className="font-display text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+            <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Outcome & Impact
             </h2>
