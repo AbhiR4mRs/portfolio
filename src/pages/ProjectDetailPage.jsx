@@ -164,31 +164,31 @@ export default function ProjectDetailPage() {
               <div className="flex min-w-[500px] justify-between items-center gap-4">
                 {slug === 'zero-day-intrusion-detection-system' ? (
                   <>
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Network size={16} className="text-indigo-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Source</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Network Packet</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-indigo-500/25 bg-indigo-500/5 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-indigo-500/45 bg-indigo-500/5 p-4 w-32 text-center">
                       <Database size={16} className="text-indigo-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-indigo-400">Queue</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Redis Ingestion</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-indigo-700 animate-pulse shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-indigo-400 animate-pulse shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Cpu size={16} className="text-indigo-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Core Model</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">LSTM Attention</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Eye size={16} className="text-indigo-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Evaluator</p>
@@ -198,31 +198,31 @@ export default function ProjectDetailPage() {
                   </>
                 ) : slug === 'foreign-object-intrusion-detection' ? (
                   <>
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Network size={16} className="text-cyan-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Feed</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Railway Video</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Database size={16} className="text-cyan-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">CV Filter</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">OpenCV CLAHE</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-cyan-700 animate-pulse shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-cyan-500/25 bg-cyan-500/5 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-cyan-400 animate-pulse shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-cyan-500/45 bg-cyan-500/5 p-4 w-32 text-center">
                       <Cpu size={16} className="text-cyan-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-cyan-400">Detector</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">YOLO Backbone</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Eye size={16} className="text-cyan-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Output</p>
@@ -232,31 +232,31 @@ export default function ProjectDetailPage() {
                   </>
                 ) : slug === 'credit-card-approval-prediction' ? (
                   <>
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Network size={16} className="text-violet-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Dataset</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Financial Profiles</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Database size={16} className="text-violet-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Balancing</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">SMOTE Resample</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-violet-700 animate-pulse shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-violet-500/25 bg-violet-500/5 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-violet-400 animate-pulse shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-violet-500/45 bg-violet-500/5 p-4 w-32 text-center">
                       <Cpu size={16} className="text-violet-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-violet-400">Classifier</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Random Forest</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Eye size={16} className="text-violet-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Artifact</p>
@@ -266,31 +266,31 @@ export default function ProjectDetailPage() {
                   </>
                 ) : (
                   <>
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Network size={16} className="text-emerald-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Request</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Student Booking</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Database size={16} className="text-emerald-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">Route</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">Django MVC</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-emerald-700 animate-pulse shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-emerald-500/25 bg-emerald-500/5 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-emerald-400 animate-pulse shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-emerald-500/45 bg-emerald-500/5 p-4 w-32 text-center">
                       <Cpu size={16} className="text-emerald-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-emerald-400">Database</p>
                         <p className="text-[10px] font-bold text-white mt-0.5">SQLite Storage</p>
                       </div>
                     </div>
-                    <ArrowRight size={14} className="text-zinc-700 shrink-0" />
-                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/5 bg-slate-900/60 p-4 w-32 text-center">
+                    <ArrowRight size={14} className="text-zinc-500 shrink-0" />
+                    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-white/20 bg-slate-900/60 p-4 w-32 text-center">
                       <Eye size={16} className="text-emerald-400" />
                       <div>
                         <p className="font-mono text-[9px] uppercase tracking-wider text-zinc-500">UI</p>
