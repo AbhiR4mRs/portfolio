@@ -1,7 +1,7 @@
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { profile } from '../data/siteData';
 
 const navItems = [
@@ -14,6 +14,10 @@ const navItems = [
 export default function Layout() {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="relative min-h-screen bg-ink text-zinc-100 selection:bg-indigo-500/30 selection:text-white">
