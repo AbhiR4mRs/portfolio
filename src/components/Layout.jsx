@@ -35,7 +35,9 @@ export default function Layout() {
       </div>
 
       {/* Floating Glassmorphic Nav Bar Dock */}
-      <header className="fixed top-6 left-1/2 z-50 w-[92%] max-w-5xl -translate-x-1/2 rounded-full border border-white/5 bg-slate-950/45 px-6 py-3.5 shadow-premium backdrop-blur-xl transition-all duration-300">
+      <header className={`fixed top-6 left-1/2 z-50 w-[92%] max-w-5xl -translate-x-1/2 border border-white/5 bg-slate-950/45 px-6 py-3.5 shadow-premium backdrop-blur-xl transition-all duration-300 ${
+        mobileMenuOpen ? 'rounded-3xl' : 'rounded-full'
+      }`}>
         <div className="flex items-center justify-between">
           {/* Logo / Name */}
           <NavLink 
@@ -103,10 +105,10 @@ export default function Layout() {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="rounded-full border border-white/5 p-2 text-zinc-400 hover:text-white"
+              className="rounded-xl border border-white/5 p-2.5 text-zinc-400 hover:text-white bg-white/5 hover:bg-white/10 transition-all"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>
