@@ -125,10 +125,10 @@ export default function ProjectDetailPage() {
       </div>
 
       {/* Main Grid Layout: Content (Left) & Sidebar (Right) */}
-      <div className="grid gap-6 lg:gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-start">
+      <div className="grid gap-6 lg:gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-start w-full">
         
         {/* Case Study Core Content (Left) */}
-        <div className="space-y-10 sm:space-y-12">
+        <div className="space-y-10 sm:space-y-12 min-w-0 w-full">
           
           {/* Key Metrics Panels */}
           {project.metrics && (
