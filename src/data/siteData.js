@@ -8,7 +8,7 @@ export const profile = {
   github: 'https://github.com/AbhiR4mRs',
   linkedin: 'https://www.linkedin.com/',
   summary:
-    'Integrated M.Sc. Computer Science graduate specializing in AI and Machine Learning. Highly adaptable engineer seeking Software Developer, QA Engineer, Full Stack Developer, and AI/ML roles. Experienced in building intelligent pipelines, deep learning vision models, scalable backends (Django/FastAPI), and executing comprehensive testing frameworks.',
+    'Integrated M.Sc. student specialising in Artificial Intelligence and Machine Learning with hands-on project experience in computer vision, predictive modelling, and deep learning. Built a real-time YOLO-based object detection system for railway safety, an end-to-end ML classification pipeline for fintech data, and a real-time zero-day intrusion detection system using reconstruction-error-based anomaly detection. Proficient in Python, TensorFlow, PyTorch, and Scikit-learn. Seeking an entry-level AI/ML engineering or research role to deliver impact through applied intelligence.',
   hero:
     'I engineer intelligent software systems and robust full-stack pipelines — from high-accuracy computer vision models to secure, containerized backend architectures.',
   web3formsKey: 'YOUR_WEB3FORMS_ACCESS_KEY' // Get a free key at web3forms.com to receive form submissions in your email
