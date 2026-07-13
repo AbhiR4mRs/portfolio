@@ -17,7 +17,7 @@ export const profile = {
 export const roles = [
   {
     id: 'aiml',
-    name: 'AI/ML Specialist',
+    name: 'AI/ML',
     summary: 'Designing real-time computer vision workflows, deep learning networks (LSTM, Attention, YOLO), and data pipelines with PyTorch and Scikit-learn.'
   },
   {
