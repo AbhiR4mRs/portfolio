@@ -18,17 +18,17 @@ export const roles = [
   {
     id: 'aiml',
     name: 'AI/ML',
-    summary: 'Designing real-time computer vision workflows, deep learning networks (LSTM, Attention, YOLO), and data pipelines with PyTorch and Scikit-learn.'
+    summary: 'Motivated recent graduate seeking an entry-level AI/ML role. Hands-on experience building deep learning models (LSTM, PyTorch) and real-time computer vision pipelines (YOLO, OpenCV) through academic builds.'
   },
   {
     id: 'fullstack',
     name: 'Full Stack Developer',
-    summary: 'Building responsive frontend interfaces in React and robust backend applications using Django and FastAPI, connected to high-performance Redis caches and SQL databases.'
+    summary: 'Eager to contribute as an entry-level developer. Practical experience designing responsive React frontends and developing Python backend services (Django, FastAPI) connected to Redis and SQL databases.'
   },
   {
     id: 'qa',
     name: 'QA & Software Engineer',
-    summary: 'Ensuring software reliability, system integrity, performance benchmarking, and structured test coverage across web apps and machine learning systems.'
+    summary: 'Detail-oriented junior engineer focused on system reliability. Skilled in structured unit testing (PyTest, Django), validating data schemas, and benchmarking pipeline throughput.'
   }
 ]
 
